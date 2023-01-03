@@ -1,6 +1,6 @@
 // import style from "./AddTaskForm.module.css";
 
-const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
+const AddTaskForm = ({ newTask, setNewTask, addTask, handleKeyDown }) => {
 	return (
 		<>
 			<div className="row">
@@ -8,6 +8,7 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
 					<input
 						value={newTask}
 						onChange={e => setNewTask(e.target.value)}
+						onKeyDown={handleKeyDown}
 						type="text"
 						className="form-control form-control-lg"
 					/>

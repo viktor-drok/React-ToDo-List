@@ -54,6 +54,13 @@ function App() {
 		setUpdateData("");
 	};
 
+	const handleKeyDown = event => {
+		if (event.key === "Enter") {
+			console.log(event.key);
+			addTask();
+		}
+	};
+
 	return (
 		<div className="container App">
 			<h1>ToDo List App on ReactJS</h1>
@@ -72,6 +79,7 @@ function App() {
 					newTask={newTask}
 					setNewTask={setNewTask}
 					addTask={addTask}
+					handleKeyDown={handleKeyDown}
 				/>
 			)}
 
