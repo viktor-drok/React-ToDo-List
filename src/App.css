@@ -25,8 +25,9 @@ body {
 }
 
 .taskBg .done .taskText {
-  text-decoration: line-through;
-  opacity: 0.3;
+  text-decoration: line-through red 3px;
+  opacity: 0.7;
+  color: rgb(198, 229, 40);
 }
 
 .taskNumber {
